@@ -1,0 +1,493 @@
+#header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 2opx;
+    background-color:#F0F0F0;
+    border-radius: 8px;
+}
+.logo img{
+    height: 50px;
+    padding-right:20px;
+}
+#nav-bar ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#nav-bar ul li{
+    margin-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    white-space: pre-wrap;
+    line-height: 1.2;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color:#333333;
+    font-weight: bold;
+    display: block;
+}
+#nav-bar ul li a:hover {
+    color: #457B9D; 
+}
+.slogan{
+    background-color:#A8DADC ;
+    border-radius: 8px;
+    color:#333333;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+    position: relative;
+    border-top: 5px solid white;
+    
+}
+.slogan::before,
+.slogan::after{
+    content:'';
+    display:block;
+    width:100%;
+    height:5px;
+    background-color: white;
+    border-radius: 5px;
+}
+.texto{
+    padding: 10px;
+    text-indent: 20px;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.foto-sobre-nosotros{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color:#A8DADC;
+    border-radius: 8px;
+}
+.foto-sobre-nosotros img{
+    max-width: 95%; 
+    height: auto;
+    border: 5px solid #F0F0F0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.ventajas h2{
+    text-align: center;
+    background-color:#457B9D;
+    color:white;
+    padding:15px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.frases-ventajas{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.gris, .azul{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    color: #333333;
+}
+.gris{
+    background-color: #F0F0F0;
+    transition: background-color 0.3s ease;
+}
+.gris:hover {
+    background-color: #A8DADC; 
+}
+
+.azul{
+    background-color: #A8DADC;
+    transition: background-color 0.3s ease;
+}
+.azul:hover {
+    background-color: #F0F0F0; 
+}
+.icon{
+    font-size: 24px;
+    color: #457B9D;
+    margin-right: 15px;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    padding:20px;
+}
+.product{
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.product h4{
+    background-color: #A8DADC;
+    color: #333333;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+    font-size: 18px;
+}
+.product img{
+    width:100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+.caracteristicas{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #A8DADC;
+    color: #333333;
+    border-radius: 8px;
+    width: 100%;
+    text-align: left;
+}
+.caracteristicas li {
+    margin: 5px 0;
+}
+.cotizar-btn{
+    display: inline-block;
+    background-color: #457B9D;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition:background-color 0.3s ease;
+}
+.cotizar-btn:hover{
+    background-color: #333333;
+}
+.ver-catalogo {
+    display: block;
+    background-color: #457B9D; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto; /* Centra el botón */
+    width: 80%; /* Ancho del botón (ajusta según sea necesario) */
+    max-width: 300px; /* Tamaño máximo del botón */
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.ver-catalogo:hover {
+    background-color: #333333; /* Cambio de color al pasar el mouse */
+}
+.trabajos-realizados{
+    overflow:hidden;
+    padding:20px;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    text-align: center;
+}
+.trabajos-realizados  h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #457B9D;
+    padding: 15px;
+    border-radius: 8px;
+}
+.carrusel-contenedor{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    background-color:#457B9D
+}
+
+.comentario{
+    flex: 0 0 100%;
+    background-color:#A8DADC;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+    min-width: 300px;
+    max-width: 400px;
+    margin: auto;
+}
+.nombre-cliente, .comentario-cliente, .fecha-cliente {
+    margin: 10px 0;
+}
+.comentario h3 {
+    font-size: 18px;
+    color: #457B9D;
+}
+.comentario p {
+    font-size: 16px;
+    color: #333333;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.comentario h5 {
+    font-size: 14px;
+    color:#457B9D
+}
+.comentario::before,
+.comentario::after{
+    content:'';
+    display:block;
+    width:100%;
+    height:5px;
+    background-color: white;
+    border-radius: 5px;
+}
+.trabajos-galeria{
+    padding:20px;
+    background-color:#F0F0F0
+    text-align: center;
+}
+
+.trabajos-galeria h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.galeria{
+    display:flex;
+    gap:15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+.galeria img {
+    height:250px;
+    border-radius:8px ;
+    scroll-snap-align: center;
+    flex:0 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+    cursor:pointer;
+}
+.galeria img:hover{
+    transform: scale(1.05);
+}
+
+
+.contactos {
+    padding: 20px;
+    background-color:#A8DADC; /* Fondo gris suave */
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Encabezado de la sección */
+.contact-section-header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Contenedor de los enlaces de contacto */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los botones */
+}
+
+/* Estilo de los botones de contacto */
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #457B9D; /* Color azul oscuro */
+    color: white;
+    font-size: 24px;
+    border-radius: 50%; /* Hacer el botón redondo */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover en los botones */
+.contact-details:hover {
+    background-color: #333333; /* Cambiar el color al pasar el mouse */
+}
+
+/* Estilos de los íconos dentro de los botones */
+.contact-details i {
+    margin: 0; /* Quitar márgenes adicionales del ícono */
+}
+
+/* Estilo para el contenedor de la galería */
+.galeria img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox - ventana emergente */
+#lightbox {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Coloca el lightbox encima de otros elementos */
+}
+
+/* Imagen ampliada dentro del lightbox */
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior de la pantalla */
+    right: 20px;  /* Distancia desde el borde derecho */
+    background-color:#333333; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* El botón está oculto por defecto */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    background-color:#457B9D; /* Cambia el color al pasar el ratón */
+  }
+
+footer{
+    background-color: #333333;
+    border-radius: 8px;
+}
+.bottom-menu ul li{
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: #333333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ajusta el contenido en pantallas pequeñas */
+}
+
+/* Estilo del menú del footer */
+.bottom-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Espacio entre los enlaces */
+}
+
+/* Enlaces del menú */
+.bottom-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.bottom-menu ul li a:hover {
+    color: #A8DADC; /* Color azul claro al pasar el mouse */
+}
+
+/* Texto de copyright en el footer */
+footer p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #cccccc; /* Gris claro */
+    flex: 1 1 100%; /* Se expande a toda la línea en pantallas pequeñas */
+}
+@media (max-width: 992px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+@media (max-width:668px){
+    #nav-bar ul{
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .logo img{
+        height: 40px;
+    }
+      
+#nav-bar ul li{
+    margin:5px 0;
+    font-size: 16px;
+     }
+.logo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#header{
+    flex-direction: column;
+    align-items: center;
+}
+.slogan {
+    font-size: 20px; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    padding: 30px 15px; /* Ajusta el espaciado en pantallas pequeñas */
+}
+.comentario{
+ 
+    min-width: 200px;
+    max-width: 250px;
+
+}
+footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom-menu {
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 576px) {
+    .productos {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}

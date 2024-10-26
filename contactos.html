@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width-device-width, initial-scale =1.0"/>
+<title>Protesis de pierna en Costa Rica</title>
+<link 
+  rel = "stylesheet" 
+  href = "styles.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+
+    </head>
+    <body>
+<header id="header">
+<div class="logo">
+    <img src="img/logo.png">
+</div>
+<nav id="nav-bar">
+    <ul>
+        <li><a class="nav-link" href="index.html">Sobre nosotros</a></li>
+        <li><a  class="nav-link" href="productos.html">Catalogo</a></li>
+        <li><a  class="nav-link" href="trabajos.html">Trabajos realizados</a></li>
+        <li><a  class="nav-link" href="contactos.html">Contactos</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    <section class="contactos">
+        <div class="contact-section-header">
+            <h2>Haz click para contactarnos:</h2>
+            </div>
+        <div class="contact-links">
+               <a
+               href="https://facebook.com/lilia.omoloeva.5"
+                      target="_blank"
+                      class="btn contact-details">
+                      <i class="fab fa-facebook"></i>
+                     </a>
+            
+               <a href="https://wa.me/50687469952" 
+               target="_blank"
+               class="btn contact-details">
+                  <i class="fa-brands fa-square-whatsapp"></i>
+               </a>
+            
+               <a href="mailto:info.magazincr@gmail.com"
+               target="_blank"
+               class="btn contact-details">
+                  <i class="fa-solid fa-envelope"></i>
+               </a>
+            
+        </div>
+                
+    </section>
+  
+</main>
+<footer>
+    <div class="bottom-menu">
+        <ul>
+            <li><a class="nav-link" href="index.html">Sobre nosotros</a></li>
+            <li><a  class="nav-link" href="productos.html">Catalogo</a></li>
+            <li><a  class="nav-link" href="trabajos.html">Trabajos realizados</a></li>
+            <li><a  class="nav-link" href="contactos.html">Contactos</a></li>
+        </ul>  
+    </div>
+    <p>&copy; 2024 Lilia Silva. All rights reserved.</p>
+</footer>
+<!-- Flecha hacia arriba -->
+<a href="#" class="back-to-top" id="back-to-top">
+    &#8679; <!-- Flecha hacia arriba -->
+  </a>
+  <script>
+    // Mostrar el botón cuando el usuario se desplaza hacia abajo
+    window.onscroll = function() {
+      var backToTopButton = document.getElementById("back-to-top");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+  
+    // Función para volver al principio de la página al hacer clic
+    document.getElementById("back-to-top").onclick = function(event) {
+      event.preventDefault();
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+  </script>
+    </body>
+</html>
